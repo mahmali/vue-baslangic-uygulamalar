@@ -9,9 +9,13 @@
     <br>
     <button v-on:click="msg3('mali')">Alert Göster</button>
     <br>
-    <button v-on:click="arttır(33)">arttır</button> <p>{{sayi}}</p> <button v-on:click="azalt()">azalt</button>
-    <p v-on:mousemove="koordinat(2,$event)">mause kordinat çalıştır</p> <p>{{x}} {{y}}</p>
-
+    <div  v-on:mousemove="koordinat(2,$event)">
+      <button v-on:click="arttır(33)">arttır</button> <p>{{sayi}}</p> <button v-on:click="azalt()">azalt</button>
+      <p v-on:mousemove.stop>burda kardinat durur</p>
+      <p>mause kordinat çalıştır</p> <p>{{x}} {{y}}</p>
+    </div>
+    <input type="text" v-on:keyup.enter="keyupEnter">
+    <input v-model="vmodel" type="text"/> <p>{{vmodel}}</p>
   </div>
 </template>
 
@@ -26,7 +30,8 @@ export default {
       denemelink: 'https://www.google.com.tr/?hl=tr',
       sayi: 1,
       x: 0,
-      y: 0
+      y: 0,
+      vmodel: 'deneme'
     }
   },
   methods: {
@@ -47,6 +52,9 @@ export default {
       this.x = event.clientX
       this.y = event.clientY
       // alert(sayi2)
+    },
+    keyupEnter: function (event) {
+      alert(event.target.value)
     }
   }
 }
