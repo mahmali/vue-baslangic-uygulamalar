@@ -1,15 +1,27 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
+import deneme from '../components/Deneme'
+import calismasayfasi from '../components/Calismasayfasi.vue'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '',
       name: 'HelloWorld',
       component: HelloWorld
+    },
+    {
+      path: '/deneme',
+      name: 'Deneme',
+      component: deneme
+    },
+    {
+      path: '/calismasayfasi',
+      name,
+      component: calismasayfasi
     }
   ]
 })
