@@ -11,6 +11,7 @@
     <br>
     <button v-on:click="arttır(33)">arttır</button> <p>{{sayi}}</p> <button v-on:click="azalt()">azalt</button>
     <p v-on:mousemove="koordinat(2,$event)">mause kordinat çalıştır</p> <p>{{x}} {{y}}</p>
+    <p>{{output}}</p>
 
   </div>
 </template>
@@ -47,6 +48,11 @@ export default {
       this.x = event.clientX
       this.y = event.clientY
       // alert(sayi2)
+    }
+  },
+  computed: {
+    output: function () {
+      return 'computed output çıktısı'
     }
   }
 }
