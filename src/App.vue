@@ -11,4 +11,8 @@ export default {
 </script>
 
 <style>
+#app {
+  margin: 0 auto;
+  background-color: #2c3e50;
+}
 </style>
