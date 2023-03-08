@@ -7,18 +7,24 @@
       <p id="h1" style="font-family: Poppins">Yeni Bir Kullanıcı Oluşturun</p>
       <div class="input-user">
         <img id="icon" src="../assets/singin/user-icon.svg" width="24" height="24" />
-        <input style="color: white" type="text">
+        <input style="color: white" type="text" placeholder="Kullanıcı Adı">
       </div>
       <div class="input-user">
         <img id="icon" src="../assets/singin/email-icon.svg" width="24" height="24" />
-        <input style="color: white" type="email">
+        <input style="color: white" type="email" placeholder="example@mail.com">
       </div>
       <div class="input-user">
         <img id="icon" src="../assets/singin/password-icon.svg" width="24" height="24" />
-        <input style="color: white" type="password">
+        <input id="input_Password" style="color: white" type="password" placeholder="password">
+        <img id="eye" src="../assets/singin/eyelash.svg" width="24" height="24">
       </div>
       <p id="txt-ks">Kaydolurken Kullanım Şartlarımızı ve Gizlilik Politikamızı
         kabul edersiniz.</p>
+      <button id="btn_kayitol">Kayıt Ol</button>
+      <div id="oturumacin">
+        <p style="margin-right: 8px" id="txt-ks">Zaten hesabınız var mı?   </p>
+        <a href="https://www.w3schools.com/tags/tag_link.asp">Oturum Açın</a>
+      </div>
     </div>
   </div>
 </template>
@@ -29,6 +35,13 @@ export default {
 }
 </script>
 <style scoped>
+#oturumacin{
+  display: flex;
+  align-items: center;
+}
+#oturumacin a{
+  color: #FFFFFF;
+}
 .container{
   display: flex;
   align-items: center;
@@ -46,6 +59,7 @@ export default {
   border-radius: 20px;
   align-items: center;
   background: url(../assets/singin/bg-opacity.svg) no-repeat;
+  backdrop-filter: blur(5px);
 }
 #img{
   justify-content: center;
@@ -60,8 +74,8 @@ export default {
 #h1{
   color: white;
   font-size: 28px;
-  font-family: Poppins;
-  font-style: initial;
+  font-family: 'Gill Sans';
+  font-style: normal;
   margin-bottom: 40px;
 }
 input{
@@ -79,6 +93,7 @@ input{
 }
 .input-user{
   background-color: black;
+  background: transparent;
   box-sizing: border-box;
   width: 429px;
   height: 51px;
@@ -86,11 +101,18 @@ input{
   border-radius: 35px;
   margin-bottom: 10px;
 }
-
+.input-user input{
+  background: transparent !important;
+}
+.input-user:focus ~img,
+.input-user:valid ~img{
+  top: -5px;
+}
 input[type="text"]:focus {
   outline: none;
   box-shadow: none;
   border:none;
+
 }
 input[type="text"]:focus:hover {
   outline: none;
@@ -106,6 +128,38 @@ input[type="text"]:focus:hover {
   font-size: 15px;
   line-height: 17px;
   text-align: center;
+  color: white;
+}
+#txt-ks a{
+  position: absolute;
+}
+#eye{
+  margin-left: 340px;
+}
+.input-user #input_Password{
+  width: 300px !important;
+}
+#btn_kayitol{
+  box-sizing: border-box;
+
+  width: 429px;
+  height: 51px;
+  left: 1035px;
+  top: 764px;
+  margin-top: 10px;
+
+  background: #D9D9D9;
+  border: 0.5px solid #FFFFFF;
+  border-radius: 35px;
+
+  font-family: 'Gill Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+}
+#btn_kayitol:hover{
+  background: transparent;
   color: white;
 }
 </style>
