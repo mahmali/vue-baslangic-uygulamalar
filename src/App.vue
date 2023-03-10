@@ -5,15 +5,17 @@
 </template>
 
 <script>
+
+import calismasayfasi from './components/Calismasayfasi.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    calisma: calismasayfasi
+  }
 }
 </script>
 
 <style>
-#app {
-  margin: 0;
-  padding: 0;
-  background-color: #2c3e50;
-}
+
 </style>
