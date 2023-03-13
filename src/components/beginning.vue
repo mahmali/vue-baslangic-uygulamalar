@@ -1,16 +1,12 @@
 <template>
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>Hello word sayfası</p>
-      </div>
-    </div>
+    <p>başlangıç sayfası</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'beginning',
   data () {
     return {
     }

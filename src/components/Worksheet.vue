@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: 'Calismasayfasi',
+  name: 'Workshoot',
   data () {
     return {
       msg: 'data içindeki msg ',

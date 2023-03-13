@@ -1,7 +1,9 @@
-import helloWorld from './components/HelloWorld.vue'
-import singin from './components/Singin.vue'
+import Beginning from './components/beginning.vue'
+import Singin from './components/Singin.vue'
+import Worksheet from './components/Worksheet.vue'
 
 export const routes = [
-  { path: '', component: helloWorld },
-  { path: '/singin', component: singin }
+  { path: '', component: Beginning },
+  { path: '/singin', component: Singin },
+  { path: '/worksheet', component: Worksheet }
 ]

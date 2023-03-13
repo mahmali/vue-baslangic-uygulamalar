@@ -1,17 +1,18 @@
 <template>
   <div id="app">
+    <appheader></appheader>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 
-import calismasayfasi from './components/Calismasayfasi.vue'
+import header from './components/page/header.vue'
 
 export default {
   name: 'App',
   components: {
-    calisma: calismasayfasi
+    appheader: header
   }
 }
 </script>
