@@ -12,20 +12,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <router-link
+              active-class="active"
               to="/singin"
               tag="li">
               <a class="nav-link active" aria-current="page">Singin</a>
             </router-link>
             <router-link
-              to="/singin"
+              active-class="active"
+              to="/worksheet"
               tag="li">
               <a class="nav-link active" aria-current="page">Worksheet</a>
             </router-link>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home-Page</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>

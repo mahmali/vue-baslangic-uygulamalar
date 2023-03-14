@@ -1,25 +1,28 @@
 <template>
-  <div id="app">
-    <p>Data mesaj: {{msg}}</p>
-    <p v-once>Data mesaj: {{msg}}</p>
-    <p>Data mesaj "v-once" kullanımı: {{msg}}</p>
-    <p>Methods hello metodu{{deneme()}}</p>
-    <p><a v-bind:href="google">link</a></p>
-    <a href="denemelink">denemelink</a>
-    <br>
-    <button v-on:click="msg3('mali')">Alert Göster</button>
-    <br>
-    <button v-on:click="arttır(33)">arttır</button> <p>{{sayi}}</p> <button v-on:click="azalt()">azalt</button>
-    <p v-on:mousemove="koordinat(2,$event)">mause kordinat çalıştır</p> <p>{{x}} {{y}}</p>
-    <p>{{output}}</p>
-    <router-view></router-view>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+          <p>Data mesaj: {{msg}}</p>
+          <p v-once>Data mesaj: {{msg}}</p>
+          <p>Data mesaj "v-once" kullanımı: {{msg}}</p>
+          <p>Methods hello metodu{{deneme()}}</p>
+          <p><a v-bind:href="google">link</a></p>
+          <a href="denemelink">denemelink</a>
+          <br>
+          <button v-on:click="msg3('mali')">Alert Göster</button>
+          <br>
+          <button v-on:click="arttır(33)">arttır</button> <p>{{sayi}}</p> <button v-on:click="azalt()">azalt</button>
+          <p v-on:mousemove="koordinat(2,$event)">mause kordinat çalıştır</p> <p>{{x}} {{y}}</p>
+          <p>{{output}}</p>
+      </div>
+    </div>
   </div>
+
 </template>
 
 <script>
 export default {
-  name: 'Workshoot',
+  name: 'Worksheet',
   data () {
     return {
       msg: 'data içindeki msg ',
@@ -60,12 +63,5 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
