@@ -7,6 +7,7 @@
       <div class="sepet">
         <p class="txt-header">Sepetim</p>
         <p class="urun">(1 Ürün))</p>
+        <p>yeni şeyler eklendi</p>
       </div>
 
     </div>
