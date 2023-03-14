@@ -7,8 +7,7 @@
       <div class="sepet">
         <p class="txt-header">Sepetim</p>
         <p class="urun">(1 Ürün))</p>
-        <p>yeni şeyler eklendi</p>
-        <p>yeni şeyler 2</p>
+        <p>yeni commit işlemi</p>
       </div>
 
     </div>
