@@ -1,5 +1,8 @@
 <template>
 $END$
+<div>
+    <p>yeni şeyler</p>
+</div>
 </template>
 
 <script>
