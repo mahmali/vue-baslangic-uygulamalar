@@ -2,6 +2,8 @@
 $END$
 <div>
     <p>yeni şeyler</p>
+    <p>deneme commit cs code</p>
+    <p>footer ekranı</p>
 </div>
 </template>
 
