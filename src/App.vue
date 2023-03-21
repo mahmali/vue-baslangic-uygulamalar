@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <applist></applist>
     <appheader></appheader>
     <router-view></router-view>
   </div>
@@ -8,11 +9,13 @@
 <script>
 
 import header from './components/page/header.vue'
+import list from './components/Portfolyo/List.vue'
 
 export default {
   name: 'App',
   components: {
-    appheader: header
+    appheader: header,
+    applist: list
   }
 }
 </script>
