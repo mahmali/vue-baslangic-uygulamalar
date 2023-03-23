@@ -1,5 +1,7 @@
 <template>
-$END$
+  <div>
+    <p>deneme</p>
+  </div>
 <div>
     <p>yeni şeyler</p>
     <p>deneme commit cs code</p>
@@ -9,7 +11,7 @@ $END$
 
 <script>
 export default {
-name: "footer"
+  name: 'footer'
 }
 </script>
 

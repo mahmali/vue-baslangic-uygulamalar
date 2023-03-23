@@ -7,5 +7,5 @@ export const routes = [
   { path: '', component: Beginning },
   { path: '/singin', component: Singin },
   { path: '/worksheet', component: Worksheet },
-  { path: '/list', component: List}
+  { path: '/list', component: List }
 ]

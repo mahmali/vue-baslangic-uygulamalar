@@ -1,15 +1,15 @@
 <template>
-    <div class="container">
-        portfoyo list page
-    </div>
-
+  <div class="container">
+    list sayfası
+  </div>
 </template>
+
 <script>
 export default {
-    name: 'List'
+  name: 'List'
 }
-
 </script>
 
 <style scoped>
+
 </style>
